@@ -118,10 +118,13 @@ public abstract class FMLHandshakeMessage {
         {
 
         }
+        
+        // add conditional to skip xaero's
         public ModList(List<ModContainer> modList)
         {
             for (ModContainer mod : modList)
             {
+            	// IF NOT XAERO'S MINIMAP
                 modTags.put(mod.getModId(), mod.getVersion());
             }
         }
